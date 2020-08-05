@@ -1,0 +1,31 @@
+$colors: (
+    accent: #2136FF,
+    background: #010212,
+    headings: #313131,
+    nav-bg: #F4F4F4,
+    nav-hover: #E1E1E1
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+$fonts: (
+    chakra: #{'Chakra Petch', sans-serif},
+    heebo: #{'Heebo', sans-serif}
+);
+
+@function font($font-name) {
+    @return map-get($fonts, $font-name)
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 50px;
+    }
+}
