@@ -67,6 +67,20 @@ body {
         font-size: 4rem;
         color: color(accent);
     }
+
+    h4 {
+        font-family: font(heebo);
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    h5 {
+        font-family: font(mtbold);
+        font-weight: 300;
+        font-size: 1.25rem;
+        color: color(accent);
+    }
 }
 
 .navbar-custom {
@@ -150,6 +164,12 @@ body {
 
 }
 
+.market-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .gain-loss {
     margin-left: 50px;
 
@@ -159,5 +179,61 @@ body {
 
     p {
         line-height: 4rem;
+    }
+}
+
+.right-web {
+    margin-right: 75px;
+}
+
+.top-movers, .bottom-movers {
+    margin-left: 50px;
+
+    h2 {
+        padding-bottom: 15px;
+    }
+
+    .tile-group {
+        display: flex;
+        flex-direction: row;
+
+        .market-tile {
+            background-color: color(nav-bg);
+            padding: 25px;
+            border-radius: 15px;
+            margin-right: 25px;
+            width: 175px;
+            height: 170px;
+        }
+
+        h4, h5 {
+            line-height: 1.5rem;
+        }
+        
+        h4 {
+            padding-top: 10px;
+        }
+    }
+}
+
+.bottom-movers {
+    margin-top: 50px;
+
+    #neg {
+        color: #C40000;
+    }
+}
+
+.todays-news {
+    h2 {
+        margin-left: 50px;
+    }
+
+    .news-block {
+        background-color: color(nav-bg);
+        width: 30%;
+        height: 100px;
+        margin: 20px;
+        border-radius: 15px;
     }
 }
