@@ -1,8 +1,8 @@
 $colors: (
-    accent: #2136FF,
+    accent: #0FBE00,
     background: #010212,
-    headings: #313131,
-    nav-bg: #F4F4F4,
+    headings: #F3F3F3,
+    nav-bg: #131313,
     nav-hover: #E1E1E1
 );
 
@@ -11,7 +11,7 @@ $colors: (
 }
 
 $fonts: (
-    chakra: #{'Chakra Petch', sans-serif},
+    mtbold: #{'Arial Rounded MT Bold', sans-serif},
     heebo: #{'Heebo', sans-serif}
 );
 
@@ -19,13 +19,145 @@ $fonts: (
     @return map-get($fonts, $font-name)
 }
 
-body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+html {
+    scroll-behavior: smooth;
+}
 
-    img {
-        height: 50px;
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+body {
+    h1 {
+        font-family: font(heebo);
+        font-weight: 700;
+        font-size: 3.5rem;
+        color: white;
+    }
+
+    h2 {
+        font-family: font(heebo);
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: white;
+    }
+
+    #plogo {
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+
+    h3 {
+        font-family: font(heebo);
+        font-weight: 300;
+        font-size: 1.8rem;
+        color: white;
+    }
+
+    p {
+        font-family: font(mtbold);
+        font-weight: 700;
+        font-size: 4rem;
+        color: color(accent);
+    }
+}
+
+.navbar-custom {
+    background-color: color(nav-bg);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    font-family: font(heebo);
+    font-weight: 500;
+    height: 50px;
+    z-index: 100;
+
+    .nav-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+
+    .navbar-toggler-icon {
+        background-image: "assets/Menu-Toggle.png" !important;
+    }
+
+    a {
+        color: color(accent);
+    }
+
+    li:hover {
+        background-color: color(nav-hover);
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    a:hover {
+        color: color(black);
+    }
+
+    a:focus {
+        color: color(accent);
+    }
+}
+
+.navbar-collapse {
+    border-radius: 10px;
+    
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+// Layering and alignment fix for mobile menu
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+      background-color: color(nav-bg);
+      margin-top: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    #logo {
+        margin-top: -3px;
+    }
+  }
+
+.navbar-social {
+    background-color: color(nav-bg);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    height: 50px;
+    width: 190px;
+
+    li:hover {
+        background-color: color(nav-hover);
+        border-radius: 5px;
+    }
+
+}
+
+.page-heading {
+    margin: 50px;
+    margin-top: 125px;
+
+}
+
+.gain-loss {
+    margin-left: 50px;
+
+    h2 {
+        padding-bottom: 15px;
+    }
+
+    p {
+        line-height: 4rem;
     }
 }

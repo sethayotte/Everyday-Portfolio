@@ -1,0 +1,32 @@
+{
+  "name": "nucampsite",
+  "version": "1.0.0",
+  "description": "This is a website for the fictional campsites review site NuCamp.",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seth Mitchell",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "minimist": "^1.2.5",
+    "popper.js": "^1.16.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethayotte/nucampsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sethayotte/nucampsite/issues"
+  },
+  "homepage": "https://github.com/sethayotte/nucampsite#readme"
+}
