@@ -94,13 +94,13 @@ body h5 {
 }
 
 .navbar-custom li:hover {
-  background-color: #E1E1E1;
+  background-color: #0FBE00;
   border-radius: 5px;
   width: 100%;
 }
 
-.navbar-custom a:focus {
-  color: #0FBE00;
+.navbar-custom a:hover {
+  color: #131313;
 }
 
 .navbar-collapse {
