@@ -11,7 +11,7 @@ $colors: (
 }
 
 $fonts: (
-    mtbold: #{'Arial Rounded MT Bold', sans-serif},
+    calistoga: #{'Calistoga', sans-serif},
     heebo: #{'Heebo', sans-serif}
 );
 
@@ -62,8 +62,8 @@ body {
     }
 
     p {
-        font-family: font(mtbold);
-        font-weight: 700;
+        font-family: font(calistoga);
+        font-weight: 300;
         font-size: 4rem;
         color: color(accent);
     }
@@ -76,8 +76,8 @@ body {
     }
 
     h5 {
-        font-family: font(mtbold);
-        font-weight: 300;
+        font-family: font(calistoga);
+        font-weight: 100;
         font-size: 1.25rem;
         color: color(accent);
     }

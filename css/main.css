@@ -41,8 +41,8 @@ body h3 {
 }
 
 body p {
-  font-family: Arial Rounded MT Bold, sans-serif;
-  font-weight: 700;
+  font-family: Calistoga, sans-serif;
+  font-weight: 300;
   font-size: 4rem;
   color: #0FBE00;
 }
@@ -55,8 +55,8 @@ body h4 {
 }
 
 body h5 {
-  font-family: Arial Rounded MT Bold, sans-serif;
-  font-weight: 300;
+  font-family: Calistoga, sans-serif;
+  font-weight: 100;
   font-size: 1.25rem;
   color: #0FBE00;
 }
