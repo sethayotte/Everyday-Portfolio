@@ -28,6 +28,10 @@ body h2 {
   color: white;
 }
 
+body .logo-light {
+  font-weight: 300;
+}
+
 body #plogo {
   padding-left: 5px;
   padding-top: 5px;
@@ -36,7 +40,7 @@ body #plogo {
 body h3 {
   font-family: Heebo, sans-serif;
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: white;
 }
 
@@ -119,20 +123,6 @@ body h5 {
   #logo {
     margin-top: -3px;
   }
-}
-
-.navbar-social {
-  background-color: #131313;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  border-radius: 10px;
-  height: 50px;
-  width: 190px;
-}
-
-.navbar-social li:hover {
-  background-color: #E1E1E1;
-  border-radius: 5px;
 }
 
 .page-heading {
@@ -222,5 +212,126 @@ body h5 {
   height: 100px;
   margin: 20px;
   border-radius: 15px;
+}
+
+#portfolio-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#portfolio-header #add-new {
+  background-color: #0FBE00;
+  font-family: Heebo, sans-serif;
+  font-weight: 500;
+}
+
+#portfolio-header .btn:focus, #portfolio-header .btn:active {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal-backdrop {
+  background-color: #131313 !important;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+.modal-content {
+  border-radius: 50px !important;
+}
+
+.modal-content h1, .modal-content h3 {
+  margin-left: 35px;
+  margin-top: 15px;
+}
+
+.modal-content h3 {
+  margin-left: 20% !important;
+}
+
+.modal-content .modal-header {
+  background-color: #010212;
+  color: white;
+  border-bottom: 0 none;
+}
+
+.modal-content .modal-header .close {
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 45px;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+.modal-content .modal-body {
+  background-color: #010212;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-content .modal-body .position-type #position-form, .modal-content .modal-body .position-name #position-form, .modal-content .modal-body .position-size #position-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  margin-left: 20%;
+  background-color: #131313;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.modal-content .modal-body .position-type #position-form:focus, .modal-content .modal-body .position-name #position-form:focus, .modal-content .modal-body .position-size #position-form:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal-content .modal-body .position-type .dropdown-menu, .modal-content .modal-body .position-name .dropdown-menu, .modal-content .modal-body .position-size .dropdown-menu {
+  width: 60%;
+  background-color: #131313;
+}
+
+.modal-content .modal-body .position-type .dropdown-item, .modal-content .modal-body .position-name .dropdown-item, .modal-content .modal-body .position-size .dropdown-item {
+  color: white;
+}
+
+.modal-content .modal-body .position-size {
+  margin-bottom: 25px;
+}
+
+.modal-content .modal-footer {
+  background-color: #010212;
+  color: white;
+  border-top: 0 none;
+}
+
+.modal-content .modal-footer #button-submit {
+  background-color: #0FBE00;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */

@@ -49,6 +49,10 @@ body {
         color: white;
     }
 
+    .logo-light {
+        font-weight: 300;
+    }
+
     #plogo {
         padding-left: 5px;
         padding-top: 5px;
@@ -57,7 +61,7 @@ body {
     h3 {
         font-family: font(heebo);
         font-weight: 300;
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         color: white;
     }
 
@@ -140,19 +144,6 @@ body {
     }
   }
 
-.navbar-social {
-    background-color: color(nav-bg);
-    backdrop-filter: blur(20px);
-    border-radius: 10px;
-    height: 50px;
-    width: 190px;
-
-    li:hover {
-        background-color: color(nav-hover);
-        border-radius: 5px;
-    }
-
-}
 
 .page-heading {
     margin: 50px;
@@ -233,3 +224,104 @@ body {
         border-radius: 15px;
     }
 }
+
+#portfolio-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    #add-new {
+        background-color: color(accent);
+        font-family: font(heebo);
+        font-weight: 500;
+    }
+
+    .btn:focus,.btn:active {
+        outline: none !important;
+        box-shadow: none;
+    }
+}
+
+.modal-backdrop {
+    background-color: color(nav-bg) !important;
+    backdrop-filter: blur(15px);
+}
+
+.modal-content {
+    border-radius: 50px !important;
+
+    h1, h3 {
+        margin-left: 35px;
+        margin-top: 15px;
+    }
+
+    h3 {
+        margin-left: 20% !important;
+    }
+
+    .modal-header {
+        background-color: color(background);
+        color: white;
+        border-bottom: 0 none;
+
+        .close {
+            color: white;
+            box-shadow: none;
+            font-size: 45px;
+            margin-right: 25px;
+            margin-top: 5px;
+        }
+    }
+
+    .modal-body {
+        background-color: color(background);
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+        .position-type, .position-name, .position-size {
+
+            #position-form {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 60%;
+                margin-left: 20%;
+                background-color: color(nav-bg);
+                border: none;
+                margin-bottom: 25px;
+            }
+
+            #position-form:focus {
+                outline: none !important;
+                box-shadow: none;
+            }
+
+            .dropdown-menu {
+                width: 60%;
+                background-color: color(nav-bg);
+            }
+
+            .dropdown-item {
+                color: white;
+            }
+        }
+
+        .position-size {
+            margin-bottom: 25px;
+        }
+    }
+
+    .modal-footer {
+        background-color: color(background);
+        color: white;
+        border-top: 0 none;
+
+        #button-submit {
+            background-color: color(accent);
+            font-weight: 500;
+        }
+    }
+}
+

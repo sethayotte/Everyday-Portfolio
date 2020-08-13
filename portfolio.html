@@ -18,12 +18,12 @@
         <a class="navbar-brand pl-3" href="#">
             <div class="nav-logo">
                 <img src="assets/portfolio-coin.png" height="30" class="d-inline-block align-top pr-1" alt="" id="logo">
-                <h2 id="plogo">Everyday</h2><h3 id="plogo">Portfolio</h3>
+                <h2 id="plogo">Everyday</h2><h2 class="logo-light" id="plogo">Portfolio</h2>
             </div>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="navbar-toggler-icon">
-            <img src="assets/Menu-Toggle.png" height="25" class="d-inline-block align-center">
+            <i class="fas fa-chevron-circle-down" height="25" class="d-inline-block align-center" id="menu-toggle"></i>
           </span>
         </button>
       
@@ -48,9 +48,58 @@
 
 
 
-<section class="page-heading">
+<section class="page-heading" id="portfolio-header">
     <h1>My Portfolio</h1>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn" id="add-new" data-toggle="modal" data-target="#exampleModalCenter">
+  Add New
+</button>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLongTitle">Add New</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="position-type">
+          <h3>Position Type</h3>
+          <div class="dropdown">
+            <button class="btn btn-lg btn-secondary" type="button" id="position-form" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select
+              <i class="fas fa-chevron-circle-down"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="type-dropdown">
+              <a class="dropdown-item" href="#">Stock</a>
+              <a class="dropdown-item" href="#">Mutual Fund</a>
+              <a class="dropdown-item" href="#">ETF</a>
+              <a class="dropdown-item" href="#">Other Asset</a>
+            </div>
+          </div>
+        </div>
+        <div class="position-name">
+          <h3>Name</h3>
+          <input class="form-control form-control-lg" type="text" id="position-form" placeholder="Enter symbol / name">
+        </div>
+        <div class="position-size">
+          <h3>Size of Holding</h3>
+          <input class="form-control form-control-lg" type="text" id="position-form" placeholder="Enter number">
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn" id="button-submit">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     
