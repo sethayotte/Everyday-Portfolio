@@ -270,7 +270,8 @@ body h5 {
   font-size: 1.25rem;
   font-weight: 500;
   margin: 0;
-  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .todays-news .news-stories .news-block .article-info p {
