@@ -45,3 +45,5 @@ App Store to give access to everyone.*
 ```
 Static Webpage  →  Initialize React  →  Migrate to Native Package
 ```
+
+![alt text](https://github.com/sethayotte/Portfolio_V1/blob/master/assets/Web-Based-View.png)
