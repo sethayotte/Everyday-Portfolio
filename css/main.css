@@ -44,7 +44,7 @@ body h3 {
   color: white;
 }
 
-body p {
+body #digits {
   font-family: Calistoga, sans-serif;
   font-weight: 300;
   font-size: 4rem;
