@@ -168,6 +168,9 @@ body h5 {
     margin-bottom: 50px;
   }
   .todays-news .news-stories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -176,14 +179,8 @@ body h5 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .todays-news .news-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .todays-news .news-stories #left-column, .todays-news .news-stories #right-column {
+    width: 60%;
   }
 }
 
@@ -338,6 +335,54 @@ body h5 {
 .todays-news .news-stories .news-block .article-image img {
   height: 95px;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .market-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .market-data .left-web .gain-loss #digits {
+    text-align: center;
+  }
+  .market-data .right-web {
+    margin-right: 0;
+  }
+  .market-data .right-web .top-movers .tile-group, .market-data .right-web .bottom-movers .tile-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gain-loss {
+    margin-bottom: 50px;
+  }
+  .todays-news .news-stories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .todays-news .news-stories #left-column, .todays-news .news-stories #right-column {
+    width: 60%;
+    min-width: 500px;
+  }
+  .todays-news .news-stories #right-column {
+    margin-right: 0px;
+  }
 }
 
 #portfolio-header {
