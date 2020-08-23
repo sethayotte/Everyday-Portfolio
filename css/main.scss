@@ -157,6 +157,43 @@ body {
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 1100px) {
+    .market-data {
+        flex-direction: column;
+        justify-content: center;
+        .left-web {
+            .gain-loss {
+                #digits {
+                    text-align: center;
+                }
+            }
+        }
+        .right-web {
+            margin-right: 0;
+            .top-movers, .bottom-movers {
+                .tile-group {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .gain-loss {
+        margin-bottom: 50px;
+    }
+    .todays-news {
+        .news-stories {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .news-block {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
 .gain-loss {
     margin-left: 50px;
 

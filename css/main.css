@@ -143,6 +143,50 @@ body h5 {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 1100px) {
+  .market-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .market-data .left-web .gain-loss #digits {
+    text-align: center;
+  }
+  .market-data .right-web {
+    margin-right: 0;
+  }
+  .market-data .right-web .top-movers .tile-group, .market-data .right-web .bottom-movers .tile-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gain-loss {
+    margin-bottom: 50px;
+  }
+  .todays-news .news-stories {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .todays-news .news-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .gain-loss {
   margin-left: 50px;
 }
